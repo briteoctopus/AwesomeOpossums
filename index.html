@@ -4,30 +4,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Awesome Opossums</title>
+
+    <title>Home | Awesome Opossums</title>
+
+    <!--favicon stuff--><link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest"><!--favicon stuff end-->
+
+    <!-- link google fonts below here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet"> 
+
+    <!-- link stylesheets below here (don't forget a normalize thingy too! it goes first)-->
+    <link type="text/CSS" rel="stylesheet" href="awesomeopossums.css">
 </head>
 
 <body>
     <header>
+        <!-- Header image here I think?-->
+        <img class="logoImage" src="images/Logo.png" alt="Awesome Opossum Logo">
         <h1>Awesome Opossums</h1>
     </header>
 
     <nav>
-        Featured
-        Pics
-        More Info
-        Submit
+        <ul class="nav">
+            <li>Featured</li>
+            <li>Archive</li>
+            <li>Articles</li>
+            <li>Links</li>
+            <li>Submit</li>
+            <li>About</li>
+        </ul>
     </nav>
 
     <main>
-        There should be an about here I think, and then some
-
-        Opossum Pics
+        <div>
+            <section>
+                <h2>Featured Opossum</h2>
+                <!--Pic of the week/month plus a caption-->
+            </section>
+        </div>
+        <div>
+            <section>
+                <h2>Awesome Archives</h2>
+                <!--Former featured pics; maybe make it a slideshow thing for JS req?-->
+            </section>
+        </div>
+        <div>
+            <section>
+                <h2>Awesome Articles</h2>
+                <!--Lorem Ipsum w/a link to more?-->
+            </section>
+        </div>
+        <div>
+            <section>
+                <h2>Offsite Links</h2>
+                <!--links to other websites-->
+            </section>
+        </div>
+        <div>
+            <section>
+                <h2>Submit A Picture</h2>
+                <p>Want to submit your own awesome opossum and share it with the world? Simply fill out the form below and your opossum might be the next one featured!</p>
+                <div>
+                    <form>
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName">
+                    <label for="image-title">Image Title</label>
+                    <input type="text" id="image-title">
+                    <label for="upload-image">Upload Image</label>
+                    <input type="file" id="upload-image">
+                    <label for="image-description">Image Description</label>
+                    <textarea  id="image-description"></textarea>
+                    <input type="submit" value="Click to Submit">
+                    </form>
+                </div>
+                <!--submission form -->
+            </section>
+        </div>
     </main>
 
-    <aside>This aside is where we'll put links and things I guess? Maybe the submit form, who knows.</aside>
-
-    <footer>This is footer information!</footer>
+    <footer>
+        <div>
+        This is footer information!
+        &copy; 2021 Copyright - Stephanie Boggs
+        </div>
+    </footer>
 
 </body>
 </html> 

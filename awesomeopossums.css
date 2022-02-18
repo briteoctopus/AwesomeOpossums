@@ -1,3 +1,33 @@
-body {
-    display: grid;
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+} /*sets font size for webkit/microsoft browsers to 100%*/
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+} /*makes sure all browsers follow proper box model rules*/
+
+.logoImage {
+    width: 100px;
+    height: 140px;
+}
+
+h1, h2 {
+    font-family: 'Averia Libre', cursive;
+    background-color: lightpink;
+}
+
+h1 {
+    font-size: 4rem;
+    background-color: lightpink;
+}
+
+.nav li {
+    list-style-type: none;
+}
+
+footer {
+    background-color: lightpink;
 }
