@@ -16,8 +16,7 @@ html, body {
 body {
     display: grid; 
     grid: auto-flow min-content / repeat(12, 1fr);
-    margin: 1em;
-    grid-gap: 1em;
+    /*grid-gap: 1em;*/
 }
 
 header, footer {
@@ -26,19 +25,23 @@ header, footer {
 }
 
 nav {
+    background-color: lightgray;
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 13;
+   /* margin: 1em;
+    margin-top: 0; remove if you add back grid gap*/
 }
 
 main {
-    grid-column-start: 3;
+    grid-column-start: 1;
     grid-column-end: 13;
+    margin: 1em; 
 }
 
-aside {
+/*aside {
     grid-column-start: 5;
     grid-column-end: 9;
-}
+}*/
 
 header img {
     float: left; 
@@ -47,13 +50,36 @@ header img {
 header, h1, h2, footer {
     font-family: 'Averia Libre', cursive;
     background-color: lightpink;
+    padding: 0.5em;
 }
 
 h1 {
     font-size: 4rem;
     background-color: lightpink;
+    margin: auto;
 }
 
+h3 {
+    font-family: 'Averia Libre', cursive;
+    background-color: lightgray;
+    padding: 0.1em 0.1em 0.1em 0.5em;
+    margin-bottom: 10px;
+}
+
+article p {
+    margin-top: 0px;
+}
+
+
 .nav li {
+    font-family: 'Averia Libre', cursive;
+    font-weight: bold;
+    display: inline;
+    padding: 1em;
     list-style-type: none;
+}
+
+.limit {
+    max-width: 1180px;
+    margin: auto;
 }
