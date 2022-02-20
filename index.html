@@ -20,12 +20,14 @@
     <!-- link stylesheets below here (don't forget a normalize thingy too! it goes first)-->
     <link type="text/CSS" rel="stylesheet" href="normalize.css">
     <link type="text/CSS" rel="stylesheet" href="awesomeopossums.css">
+    <link type="text/CSS" rel="stylesheet" href="awesomeopossums-med.css">
+    <link type="text/CSS" rel="stylesheet" href="awesomeopossums-lrg.css">
 </head>
 
 <body>
     <header>
         <div class="limit">
-        <img src="images/croppedlogo.svg" alt="Awesome Opossum Logo" height="140px" width="100px">
+        <img class="logoImage" src="images/croppedlogo.svg" alt="Awesome Opossum Logo">
         <h1>Awesome Opossums</h1>
         </div>
     </header>
@@ -37,24 +39,24 @@
             <li>Articles</li>
             <li>Links</li>
             <li>Submit</li>
-            <li>About</li>
         </ul>
     </nav>
 
     <main>
-        <div>
+        <div id="contentGrid">
+        <div class="featured">
             <section>
                 <h2>Featured Opossum</h2>
                 <!--Pic of the week/month plus a caption-->
             </section>
         </div>
-        <div>
+        <div class="archive">
             <section>
                 <h2>Awesome Archives</h2>
                 <!--Former featured pics; maybe make it a slideshow thing for JS req?-->
             </section>
         </div>
-        <div>
+        <div class="articles">
             <section>
                 <h2>Awesome Articles</h2>
                 <!--Lorem Ipsum w/a link to more?-->
@@ -68,7 +70,7 @@
                 </article>
             </section>
         </div>
-        <div>
+        <div class="offsite">
             <section>
                 <h2>Offsite Links</h2>
                 <!--links to other websites-->
@@ -77,9 +79,9 @@
                 <div>woAH MORE fake links!</div>
             </section>
         </div>
-        <div>
+        <div class="submission">
             <section>
-                <h2>Submit A Picture</h2>
+                <h2>Submit An Image</h2>
                 <p>Want to submit your own awesome opossum and share it with the world? Simply fill out the form below and your opossum might be the next one featured!</p>
                 <div>
                     <form>
@@ -99,16 +101,16 @@
                 <!--submission form -->
             </section>
         </div>
-        <div>
-        <aside>
-            <section>
-                <h2>Random Opossum Fact!</h2>
-                Hopefully some kind of script thing here to give you a random fact when you reload the page
-                <!--some kind of JS script to show random facts?-->
-            </section>
-        </aside>
-    </div>
+    </div> <!--contentGrid end-->
     </main>
+
+    <aside>
+        <section>
+            <h2>Random Opossum Fact!</h2>
+            Hopefully some kind of script thing here to give you a random fact when you reload the page
+            <!--some kind of JS script to show random facts?-->
+        </section>
+    </aside>
 
     <footer>
         <div class="limit">

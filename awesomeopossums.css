@@ -14,49 +14,57 @@ html, body {
 }
 
 body {
-    display: grid; 
-    grid: auto-flow min-content / repeat(12, 1fr);
-    /*grid-gap: 1em;*/
+    display: grid;
+    grid: "header" min-content
+          "nav   " min-content
+          "main  " min-content
+          "aside " min-content
+          "footer" min-content /
+          1fr;
 }
 
-header, footer {
-    grid-column-start: 1;
-    grid-column-end: 13;
+header {
+    grid-area: header;
+    background-color: lightpink;
 }
-
 nav {
+    grid-area: nav;
     background-color: lightgray;
-    grid-column-start: 1;
-    grid-column-end: 13;
-   /* margin: 1em;
-    margin-top: 0; remove if you add back grid gap*/
 }
 
 main {
-    grid-column-start: 1;
-    grid-column-end: 13;
-    margin: 1em; 
+    grid-area: main;
+    margin: 1em;
 }
 
-/*aside {
-    grid-column-start: 5;
-    grid-column-end: 9;
-}*/
+aside {
+    grid-area: aside;
+    margin: 1em;
+}
+
+footer {
+    grid-area: footer;
+    padding: 0.5em;
+}
 
 header img {
-    float: left; 
+    float: left;
 }
 
 header, h1, h2, footer {
     font-family: 'Averia Libre', cursive;
     background-color: lightpink;
-    padding: 0.5em;
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 2.5rem;
     background-color: lightpink;
     margin: auto;
+    padding: 0.5em;
+}
+
+h2 {
+    padding: 0.5em;
 }
 
 h3 {
@@ -70,6 +78,17 @@ article p {
     margin-top: 0px;
 }
 
+#contentGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.logoImage {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+    margin: 1em;
+}
 
 .nav li {
     font-family: 'Averia Libre', cursive;
@@ -82,4 +101,41 @@ article p {
 .limit {
     max-width: 1180px;
     margin: auto;
+}
+
+/*medium screen CSS*/
+@media screen and (min-width: 768px) {
+    
+    #contentGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1em;
+    }
+
+    .featured {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
+
+/*large screen CSS*/
+@media screen and (min-width: 1200px) {
+    /*#contentGrid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(2fr, max-content));
+        grid-gap: 1em;
+    }*/
+    #contentGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1em;
+    }
+    .featured {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    .submission {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
 }
