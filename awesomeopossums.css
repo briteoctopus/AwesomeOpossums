@@ -30,6 +30,7 @@ header {
 nav {
     grid-area: nav;
     background-color: lightgray;
+    text-align: center;
 }
 
 main {
@@ -75,7 +76,11 @@ h3 {
 }
 
 article p {
-    margin-top: 0px;
+    margin-top: 0em;
+}
+
+form p {
+    margin: 0.6em;
 }
 
 #contentGrid {
@@ -94,7 +99,7 @@ article p {
     font-family: 'Averia Libre', cursive;
     font-weight: bold;
     display: inline;
-    padding: 1em;
+    padding: .5em;
     list-style-type: none;
 }
 
