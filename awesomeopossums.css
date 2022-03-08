@@ -27,10 +27,35 @@ header {
     grid-area: header;
     background-color: lightpink;
 }
+
 nav {
     grid-area: nav;
+}
+
+.top-nav {
+    padding: .5em;
     background-color: lightgray;
+}
+
+.top-nav a {
     text-align: center;
+    display: block;
+    text-decoration: none;
+    font-size: 17px;
+    color: black;
+}
+
+.invis {
+    display: none;
+}
+
+.hamburger {
+    display: block;
+    position: absolute;
+    right: 5%;
+    top: 11%;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 main {
@@ -103,6 +128,10 @@ form p {
     list-style-type: none;
 }
 
+.nav li a {
+    text-decoration: none;
+}
+
 .limit {
     max-width: 1180px;
     margin: auto;
@@ -121,15 +150,26 @@ form p {
         grid-column-start: 1;
         grid-column-end: 3;
     }
+
+    nav {
+        background-color: none;
+        text-align: center;
+    }
+
+    .top-nav a {
+        display: inline;
+        text-decoration: none;
+        color: black;
+    }
+
+    .invis {
+        display: none;
+    }
 }
 
 /*large screen CSS*/
 @media screen and (min-width: 1200px) {
-    /*#contentGrid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(2fr, max-content));
-        grid-gap: 1em;
-    }*/
+
     #contentGrid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -143,4 +183,34 @@ form p {
         grid-column-start: 2;
         grid-column-end: 3;
     }
+    
+    nav {
+        background-color: lightgray;
+        padding-right: 0rem;
+        padding-top: 0rem;
+        text-align: center;
+    }
+
+    .top-nav {
+        display: block;
+    }
+
+    .hamburger {
+        display: none;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .nav a {
+        text-decoration: none;
+        color: black;
+        padding: 10px 12px;
+    }
+    
+    .nav a:hover {
+        text-decoration: underline;
+        color: #f0f0f0;
+        background-color: #303030;
+    }
+
 }

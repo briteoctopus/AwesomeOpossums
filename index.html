@@ -32,14 +32,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,700;1,300&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
 
     <!-- link stylesheets below here (don't forget a normalize thingy too! it goes first)-->
-    <link type="text/CSS" rel="stylesheet" href="normalize.css" />
-    <link type="text/CSS" rel="stylesheet" href="awesomeopossums.css" />
-    <link type="text/CSS" rel="stylesheet" href="awesomeopossums-med.css" />
-    <link type="text/CSS" rel="stylesheet" href="awesomeopossums-lrg.css" />
+    <link type="text/CSS" rel="stylesheet" href="/normalize.css" />
+    <link type="text/CSS" rel="stylesheet" href="/awesomeopossums.css" />
   </head>
 
   <body>
@@ -52,35 +49,38 @@
         />
         <h1>Awesome Opossums</h1>
       </div>
+      <span id="hamburger" class="hamburger">&#9776;</span>
     </header>
 
     <nav>
+      <div id="navlinks" class="top-nav invis">
       <ul class="nav">
-        <li>Featured</li>
-        <li>Archive</li>
-        <li>Articles</li>
-        <li>Links</li>
-        <li>Submit</li>
+        <li><a href="#featured">Featured</a></li>
+        <li><a href="#archives">Archive</a></li>
+        <li><a href="#articles">Articles</a></li>
+        <li><a href="#links">Links</a></li>
+        <li><a href="#submitform">Submit</a></li>
       </ul>
+      </div>
     </nav>
 
     <main>
       <div id="contentGrid">
         <div class="featured">
           <section>
-            <h2>Featured Opossum</h2>
+            <h2 id="featured">Featured Opossum</h2>
             <!--Pic of the week/month plus a caption-->
           </section>
         </div>
         <div class="archive">
           <section>
-            <h2>Awesome Archives</h2>
-            <!--Former featured pics; maybe make it a slideshow thing for JS req?-->
+            <h2 id="archives">Awesome Archives</h2>
+            <!--Former featured pics; maybe link to another page?-->
           </section>
         </div>
         <div class="articles">
           <section>
-            <h2>Awesome Articles</h2>
+            <h2 id="articles">Awesome Articles</h2>
             <!--Lorem Ipsum w/a link to more?-->
             <article>
               <h3>Article Title</h3>
@@ -100,7 +100,7 @@
         </div>
         <div class="offsite">
           <section>
-            <h2>Offsite Links</h2>
+            <h2 id="links">Offsite Links</h2>
             <!--links to other websites-->
             <div>This is a link to a site!</div>
             <div>SO is this!</div>
@@ -109,7 +109,7 @@
         </div>
         <div class="submission">
           <section>
-            <h2>Submit An Image</h2>
+            <h2 id="submitform">Submit An Image</h2>
             <p>
               Want to submit your own awesome opossum and share it with the
               world? Simply fill out the form below and your opossum might be
@@ -175,5 +175,7 @@
     <footer>
       <div class="limit">This is footer information!</div>
     </footer>
+
+    <script src="awesomeopossums.js"></script>
   </body>
 </html>
