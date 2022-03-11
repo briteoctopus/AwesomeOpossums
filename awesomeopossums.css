@@ -16,7 +16,7 @@ html, body {
 body {
     display: grid;
     grid: "header" min-content
-          "nav   " min-content
+          "nav   " max-content
           "main  " min-content
           "aside " min-content
           "footer" min-content /
@@ -32,17 +32,28 @@ nav {
     grid-area: nav;
 }
 
+ul.nav {
+    padding: 0 0 0 1em;
+    display: block;
+    margin: 0;
+}
+
 .top-nav {
     padding: .5em;
     background-color: lightgray;
+    overflow: hidden;
+    position: relative;
 }
 
 .top-nav a {
-    text-align: center;
     display: block;
     text-decoration: none;
     font-size: 17px;
     color: black;
+}
+.top-nav a:hover{
+    background-color: #303030;
+    color: white;
 }
 
 .invis {
@@ -52,8 +63,8 @@ nav {
 .hamburger {
     display: block;
     position: absolute;
-    right: 5%;
-    top: 11%;
+    right: 88%;
+    top: 2%;
     font-size: 2rem;
     font-weight: bold;
 }
@@ -73,13 +84,10 @@ footer {
     padding: 0.5em;
 }
 
-header img {
-    float: left;
-}
-
 header, h1, h2, footer {
     font-family: 'Averia Libre', cursive;
     background-color: lightpink;
+    text-align: center;
 }
 
 h1 {
@@ -87,10 +95,12 @@ h1 {
     background-color: lightpink;
     margin: auto;
     padding: 0.5em;
+    display: block;
 }
 
 h2 {
     padding: 0.5em;
+    border-radius: 10px;
 }
 
 h3 {
@@ -98,7 +108,24 @@ h3 {
     background-color: lightgray;
     padding: 0.1em 0.1em 0.1em 0.5em;
     margin-bottom: 10px;
+    border-radius: 10px;
 }
+
+figure img {
+    border: 1px lightgray solid;
+    padding: 5px;
+    margin: auto;
+  }
+
+  figcaption {
+    background-color: lightgray;
+    color: black;
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+    max-width: fit-content;
+    margin: auto;
+  }
 
 article p {
     margin-top: 0em;
@@ -115,26 +142,40 @@ form p {
 
 .logoImage {
     width: 100%;
-    max-width: 100px;
+    max-width: 150px;
     height: auto;
-    margin: 1em;
+    margin: auto;
+    padding: 10px;
 }
 
 .nav li {
     font-family: 'Averia Libre', cursive;
     font-weight: bold;
     display: inline;
-    padding: .5em;
     list-style-type: none;
 }
 
 .nav li a {
     text-decoration: none;
+    padding: 15px;
+    margin: 2px;
+}
+
+.facts {
+    text-align: center;
 }
 
 .limit {
     max-width: 1180px;
     margin: auto;
+}
+
+.responsive {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*medium screen CSS*/
@@ -156,10 +197,20 @@ form p {
         text-align: center;
     }
 
+    .top-nav {
+        display: block;
+        padding: 1em;
+    }
+
     .top-nav a {
         display: inline;
         text-decoration: none;
         color: black;
+        margin: 2px;
+    }
+
+    .hamburger {
+        font-size: 3rem;
     }
 
     .invis {
@@ -175,10 +226,12 @@ form p {
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 1em;
     }
+
     .featured {
         grid-column-start: 1;
         grid-column-end: 4;
     }
+    
     .submission {
         grid-column-start: 2;
         grid-column-end: 3;
@@ -193,6 +246,8 @@ form p {
 
     .top-nav {
         display: block;
+        padding: 1em;
+        margin: .2em;
     }
 
     .hamburger {
@@ -205,6 +260,7 @@ form p {
         text-decoration: none;
         color: black;
         padding: 10px 12px;
+        margin: 2px;
     }
     
     .nav a:hover {

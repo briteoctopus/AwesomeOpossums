@@ -42,15 +42,12 @@
   <body>
     <header>
       <div class="limit">
-        <img
-          class="logoImage"
-          src="images/croppedlogo.svg"
-          alt="Awesome Opossum Logo"
-        />
+        <a href="index.html"><img class="logoImage" src="images/croppedlogo.svg" alt="Awesome Opossum Logo"></a>
         <h1>Awesome Opossums</h1>
       </div>
-      <span id="hamburger" class="hamburger">&#9776;</span>
     </header>
+
+    <span id="hamburger" class="hamburger">&#9776;</span>
 
     <nav>
       <div id="navlinks" class="top-nav invis">
@@ -68,8 +65,12 @@
       <div id="contentGrid">
         <div class="featured">
           <section>
-            <h2 id="featured">Featured Opossum</h2>
+            <h2 class="limit" id="featured">Featured Opossum</h2>
             <!--Pic of the week/month plus a caption-->
+            <figure>
+              <img class="weeklyopossum responsive" src="\images\coverforhissoloalbum.jpg" alt="Opossum in a tree">
+              <figcaption>"Saw this little guy watching the sunset! He looks like he's posing for the cover photo for his first solo album!"<br>Sent in by Judy</figcaption>
+            </figure>
           </section>
         </div>
         <div class="archive">
@@ -164,8 +165,8 @@
     </main>
 
     <aside>
-      <section>
-        <h2>Random Opossum Fact!</h2>
+      <section class="facts">
+        <h2 class="limit">Random Opossum Fact!</h2>
         Hopefully some kind of script thing here to give you a random fact when
         you reload the page
         <!--some kind of JS script to show random facts?-->
