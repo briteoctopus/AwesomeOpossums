@@ -79,6 +79,27 @@ aside {
     margin: 1em;
 }
 
+.exlinks {
+    background-color: lightgray;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.offsite section div {
+    padding: 7px;
+    margin: 10px;
+}
+
+.offsite section div a {
+    padding: 7px;
+}
+
+.offsite section div a:hover {
+    background-color: #303030;
+    color: white;
+}
+
 footer {
     grid-area: footer;
     padding: 0.5em;
@@ -176,6 +197,26 @@ form p {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.thumbnail {
+    border: 1px solid #ddd; 
+    border-radius: 4px; 
+    padding: 5px; 
+    width: 150px;
+}
+
+.thumbnail:hover {
+    box-shadow: 0 0 2px 1px rgba(255, 192, 203, 1.5);
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 25%;
+    padding: 5px;
 }
 
 /*medium screen CSS*/
