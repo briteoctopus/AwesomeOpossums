@@ -10,20 +10,19 @@
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="favicon/apple-touch-icon.png"
-    />
+      href="favicon/apple-touch-icon.png"/>
+
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="favicon/favicon-32x32.png"
-    />
+      href="favicon/favicon-32x32.png"/>
+
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="favicon/favicon-16x16.png"
-    />
+      href="favicon/favicon-16x16.png"/>
     <link rel="manifest" href="favicon/site.webmanifest" />
     <!--favicon stuff end-->
 
@@ -70,7 +69,7 @@
             <!--Pic of the week/month plus a caption-->
             <figure>
               <a target="_blank" href="images\coverforhissoloalbum.jpg">
-              <img class="weeklyopossum responsive" src="images\coverforhissoloalbum.jpg" alt="Opossum in a tree"></a>
+              <img class="weeklyopossum" src="images\coverforhissoloalbum.jpg" alt="Opossum in a tree"></a>
               <figcaption>"Saw this little guy watching the sunset! He looks like he's posing for the cover photo for his first solo album!"
                 <br>
                 Sent in by Judy
@@ -150,7 +149,7 @@
         </div>
         <div class="submission">
           <section>
-            <h2 id="submitform">Submit An Image</h2>
+            <h2>Submit An Image</h2>
             <p>
               Want to submit your own awesome opossum and share it with the
               world? Simply fill out the form below and your opossum might be
@@ -161,7 +160,7 @@
             </div>
             </p>
             <div>
-              <form>
+              <form id="submitform">
                 <p>
                   <label for="firstName" >First Name<abbr title="Required" aria-label="Required">*</abbr></label>
                 </p>
@@ -193,7 +192,7 @@
                   <textarea id="image-description" rows="8" cols="40" placeholder="Descibe your image, or tell a short story about what's happening!" required></textarea>
                 </p>
                 <p>
-                  <input type="submit" value="Click to Submit" />
+                  <input onclick="formGrab()" type="submit" value="Click to Submit" />
                 </p>
               </form>
             </div>
@@ -207,8 +206,8 @@
     <aside>
       <section class="facts">
         <h2 class="limit">Random Opossum Fact!</h2>
-        Hopefully some kind of script thing here to give you a random fact when
-        you reload the page
+        <p>Hopefully some kind of script thing here to give you a random fact when
+        you reload the page!</p> 
         <!--some kind of JS script to show random facts?-->
       </section>
     </aside>

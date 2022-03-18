@@ -88,7 +88,7 @@ aside {
 
 .offsite section div {
     padding: 7px;
-    margin: 10px;
+    margin: 10px 0px 10px 0px;
 }
 
 .offsite section div a {
@@ -132,21 +132,34 @@ h3 {
     border-radius: 10px;
 }
 
+figure {
+    text-align: center;
+    margin: 10px 0 0 0;
+}
+
+.weeklyopossum {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 figure img {
     border: 1px lightgray solid;
     padding: 5px;
-    margin: auto;
-  }
+}
 
-  figcaption {
+figcaption {
     background-color: lightgray;
     color: black;
     font-style: italic;
     padding: 2px;
     text-align: center;
-    max-width: fit-content;
+    max-width: max-content;
     margin: auto;
-  }
+    border-radius: 5px;
+}
 
 article p {
     margin-top: 0em;
