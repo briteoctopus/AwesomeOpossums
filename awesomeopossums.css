@@ -81,7 +81,8 @@ aside {
 }
 
 .exlinks {
-    background-color: rgba(211, 211, 211, 0.753);
+    /*background-color: rgba(211, 211, 211, 0.753); gray background color */
+    background-color: rgba(250, 250, 250, 0.829);
     border-radius: 10px;
     text-align: center;
     font-weight: bold;
@@ -257,6 +258,11 @@ padding: 5px;
 .column {
     flex: 25%;
     padding: 5px;
+}
+
+.social {
+    width: 35px;
+    margin: 10px 3px 3px 3px;
 }
 
 /*medium screen CSS*/

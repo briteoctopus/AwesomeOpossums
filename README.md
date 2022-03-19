@@ -13,8 +13,8 @@ A site for submitting pictures of awesome opossums you've spotted, as well as li
 ```
 The class(es) I created are:
 
-1. .limit
-Limits the maximum width of the element to keep it from taking up th & centers it with margin: auto.
+1. .background
+Adds a transparent background to various sections of the site to make the content more easily readable against the background.
 
 2. .invis
 Used to add display:none to elements. Specifcially used by the JavaScript function to show/hide the hamburger icon based on screen sizes specified in media querys.
