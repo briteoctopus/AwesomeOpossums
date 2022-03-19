@@ -160,7 +160,7 @@
             </div>
             </p>
             <div>
-              <form id="submitform">
+              <form id="submitform" onsubmit="formGrab()">
                 <p>
                   <label for="firstName" >First Name<abbr title="Required" aria-label="Required">*</abbr></label>
                 </p>
@@ -192,7 +192,7 @@
                   <textarea id="image-description" rows="8" cols="40" placeholder="Descibe your image, or tell a short story about what's happening!" required></textarea>
                 </p>
                 <p>
-                  <input onclick="formGrab()" type="submit" value="Click to Submit" />
+                  <input type="submit" value="Click to Submit" />
                 </p>
               </form>
             </div>
