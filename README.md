@@ -16,7 +16,7 @@ Please note that the layout breaks when viewed in Internet Explorer, and the soc
 The class(es) I created are:
 
 1. .background
-Adds a transparent background to various sections of the site to make the content more easily readable against the background.
+Adds a transparent background color to various sections of the site to make the content more easily readable against the site background/image.
 
 2. .invis
 Used to add display:none to elements. Specifcially used by the JavaScript function to show/hide the hamburger icon based on screen sizes specified in media querys.
@@ -29,7 +29,7 @@ Adds padding and a background color to the nav menu, and is also used to tweak t
 
 ## Custom JavaScript Functions
 ```
-The javascript functions I created are:
+The javascript function I created is:
 
 1. formgrab()
 Grabs the first name that was entered into the submission form, and when the form is submitted it displays a thank you message in an alert using the given information. (ex: "Thank you Jane, your submission has been receieved!")
